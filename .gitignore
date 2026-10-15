@@ -1,0 +1,18 @@
+
+# Datasets and model weights
+/data/
+/checkpoints/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+
+# Python cache and local environments
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Local secrets
+.env
+.env.*
