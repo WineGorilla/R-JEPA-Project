@@ -1,18 +1,142 @@
-
-# Datasets and model weights
+# =========================
+# Datasets
+# =========================
 /data/
+/datasets/
+
+# =========================
+# Model checkpoints / weights
+# =========================
 /checkpoints/
 *.pt
 *.pth
 *.ckpt
 *.safetensors
+*.bin
 
-# Python cache and local environments
+# =========================
+# CLEVRER QA generated files
+# =========================
+/clevrer_qa/cache/
+/clevrer_qa/checkpoints/
+/clevrer_qa/results/
+
+# =========================
+# External evaluation outputs
+# =========================
+/external_eval/results/
+
+# =========================
+# Generic experiment outputs
+# =========================
+/outputs/
+/results/
+/logs/
+/runs/
+/wandb/
+/tensorboard/
+
+*.log
+
+# =========================
+# Large generated arrays / serialized files
+# =========================
+*.npy
+*.npz
+*.pkl
+*.pickle
+
+# =========================
+# Python cache
+# =========================
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# =========================
+# Python / Conda environments
+# =========================
 .venv/
 venv/
+env/
+ENV/
 
+.conda/
+conda-env/
+
+*.egg-info/
+
+# =========================
 # Local secrets
+# =========================
 .env
 .env.*
+!.env.example
+
+# =========================
+# IDE settings
+# =========================
+.vscode/
+.idea/
+
+# =========================
+# OS generated files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Temporary files
+# =========================
+*.tmp
+*.temp
+*.part
+*.swp
+*.swo
+*~
+
+# =========================
+# Downloaded archives
+# =========================
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.gz
+*.7z
+
+# =========================
+# TensorBoard / profiler
+# =========================
+events.out.tfevents.*
+*.prof
+
+# =========================
+# Jupyter
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# Coverage / test artifacts
+# =========================
+.coverage
+htmlcov/
+coverage.xml
+
+# =========================
+# Build artifacts
+# =========================
+build/
+dist/
+*.egg
+
+# =========================
+# Local cache
+# =========================
+.cache/
+cache/
