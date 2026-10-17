@@ -1,0 +1,146 @@
+{
+  "device": "cuda",
+  "num_test_clips": 128,
+  "test_phases": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10,
+    12,
+    14,
+    16
+  ],
+  "ours_checkpoint": "/data/mi2-interns/ruiyu/R-JEPA/checkpoints/phase4/best.pt",
+  "baseline_checkpoint": "/data/mi2-interns/ruiyu/R-JEPA/checkpoints/phase4_baseline/best.pt",
+  "ours_sha256": "4509207635a601e67e2afebced9471018f9d428529140c82efa76f35c91d66a7",
+  "baseline_sha256": "329b8486469e2de0f87d568f81271b6799ec2ec62389f9a9e8bef10aaf8fccdd",
+  "ours_config": {
+    "world_dim": 512,
+    "grid_dim": 128,
+    "unfreeze_blocks": 4,
+    "protocol": "phase4_full_movic_balanced",
+    "lambda_pred": 0.75,
+    "lambda_world": 0.5,
+    "lambda_grid": 0.1,
+    "lambda_recon": 0.6,
+    "lambda_cross": 0.6,
+    "lambda_var": 0.075,
+    "lambda_cov": 0.002
+  },
+  "baseline_config": {
+    "unfreeze_blocks": 4,
+    "protocol": "phase4_full_movic_baseline"
+  },
+  "results": [
+    {
+      "phase": 0,
+      "base_pred": 0.3336836628150195,
+      "base_copy": 0.4602417070418596,
+      "base_gain": 0.2749816939457195,
+      "ours_pred": 0.02617745725729037,
+      "ours_copy": 0.07730443880427629,
+      "ours_gain": 0.661371873825151,
+      "advantage_pp": 38.63901798794315,
+      "base_delta": 9.604263821738623e-09,
+      "world_delta": 2.1792947707663293e-09
+    },
+    {
+      "phase": 2,
+      "base_pred": 0.3107525665545836,
+      "base_copy": 0.4277621788205579,
+      "base_gain": 0.27353893836195997,
+      "ours_pred": 0.02535492710012477,
+      "ours_copy": 0.07721663865959272,
+      "ours_gain": 0.6716390723519937,
+      "advantage_pp": 39.810013399003374,
+      "base_delta": 0.025743023747054394,
+      "world_delta": 0.000693950444656366
+    },
+    {
+      "phase": 4,
+      "base_pred": 0.29547307128086686,
+      "base_copy": 0.40581142890732735,
+      "base_gain": 0.2718956386308622,
+      "ours_pred": 0.024195376914576627,
+      "ours_copy": 0.07587760733440518,
+      "ours_gain": 0.6811262536528914,
+      "advantage_pp": 40.92306150220292,
+      "base_delta": 0.050996973586734384,
+      "world_delta": 0.0013182981365389423
+    },
+    {
+      "phase": 6,
+      "base_pred": 0.28483500296715647,
+      "base_copy": 0.38885221199598163,
+      "base_gain": 0.2674980514959757,
+      "ours_pred": 0.023467411432648078,
+      "ours_copy": 0.07408811675850302,
+      "ours_gain": 0.6832499939343546,
+      "advantage_pp": 41.575194243837885,
+      "base_delta": 0.07216065924149007,
+      "world_delta": 0.001879170119536866
+    },
+    {
+      "phase": 8,
+      "base_pred": 0.28032645455095917,
+      "base_copy": 0.3811551883118227,
+      "base_gain": 0.264534596019655,
+      "ours_pred": 0.02298264531418681,
+      "ours_copy": 0.07279989193193614,
+      "ours_gain": 0.6843038539717297,
+      "advantage_pp": 41.976925795207464,
+      "base_delta": 0.09159251805976965,
+      "world_delta": 0.002078364598673943
+    },
+    {
+      "phase": 10,
+      "base_pred": 0.28582140302751213,
+      "base_copy": 0.39050180360209197,
+      "base_gain": 0.26806636898723674,
+      "ours_pred": 0.023394837277010083,
+      "ours_copy": 0.07401970605133101,
+      "ours_gain": 0.6839377170616392,
+      "advantage_pp": 41.58713480744024,
+      "base_delta": 0.08289148224866949,
+      "world_delta": 0.0020249086983312736
+    },
+    {
+      "phase": 12,
+      "base_pred": 0.29737124603707343,
+      "base_copy": 0.40765538555569947,
+      "base_gain": 0.2705327672006372,
+      "ours_pred": 0.024253632189356722,
+      "ours_copy": 0.07499317661859095,
+      "ours_gain": 0.6765888140369266,
+      "advantage_pp": 40.60560468362894,
+      "base_delta": 0.057276800318504684,
+      "world_delta": 0.00173181383706833
+    },
+    {
+      "phase": 14,
+      "base_pred": 0.3141532714944333,
+      "base_copy": 0.4327035944443196,
+      "base_gain": 0.2739758219529683,
+      "ours_pred": 0.026116086679394357,
+      "ours_copy": 0.0786020775558427,
+      "ours_gain": 0.6677430483839281,
+      "advantage_pp": 39.376722643095974,
+      "base_delta": 0.037798905177623965,
+      "world_delta": 0.001470174856876838
+    },
+    {
+      "phase": 16,
+      "base_pred": 0.33782170922495425,
+      "base_copy": 0.4673369482625276,
+      "base_gain": 0.2771346017452441,
+      "ours_pred": 0.028830150520661846,
+      "ours_copy": 0.08364934852579609,
+      "ours_gain": 0.655345187634413,
+      "advantage_pp": 37.821058588916884,
+      "base_delta": 0.01783361129128025,
+      "world_delta": 0.0015234413467624108
+    }
+  ]
+}
